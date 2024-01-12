@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3. Formularios</title>
+</head>
+<body>
+    <h1>Prueba de Formulario</h1>
+    <form action="formulario.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusuario">Usuario</label>
+            <input type="text" name="usuario" id="iusuario" minlength="3" maxlength="6">
+        </p>
+        <p>
+            <label for="ipassword">Contrasena</label>
+            <input type="password" name="password" id="ipassword" minlength="6" autocomplete="">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </p>
+    </form>
+</body>
+</html>
