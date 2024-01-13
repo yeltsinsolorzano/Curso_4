@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios con checkbox and radios</title>
+</head>
+<body>
+    <h1>Ejemplo de formulario</h1>
+    <form action="formulario.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Deportes favoritos</legend>
+            <input type="checkbox" name="futbol" id="ifutbol"> <label for="ifutbol">Futbol</label>
+            <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquet</label>
+            <input type="checkbox" name="nat" id="inat"> <label for="inat">Natacion</label>
+            <input type="checkbox" name="ten" id="iten"> <label for="iten">Tennis</label>
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+        <p>
+            <input type="reset" value="Limpiar">
+        </p>
+    </form>
+</body>
+</html>
