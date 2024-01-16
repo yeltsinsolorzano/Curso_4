@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas finales para formulario</title>
+</head>
+<body>
+    <form action="formulario.php" method="get">
+        <p>
+            <label for="icity">Estado</label>
+            <select name="ciudad" id="icity">
+                <option value="" selected>--Escoja--</option>
+                <optgroup label="Venezuela">
+                    <option value="Puerto Ordaz">Puerto Ordaz</option>
+                    <option value="Caracas">Caracas</option>
+                    <option value="Valencia">Valencia</option>
+                </optgroup>
+
+                <optgroup label="Brasil">
+                    <option value="San Pablo">San Pablo</option>
+                    <option value="Brasilia">Brasilia</option>
+                    <option value="Curitiba">Curitiba</option>
+                    <option value="Recife">Recife</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Colombia">
+                    <option value="Bogota">Bogota</option>
+                    <option value="Cali">Cali</option>
+                    <option value="Medellin">Medellin</option>
+                    <option value="Cucuta">Cucuta</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprofesion">Profesion</label>
+            <input type="text" name="profesion" id="iprofesion" list="i_profesiones">
+            <datalist id="i_profesiones">
+                <option>Contador</option>
+                <option>Ingeniero</option>
+                <option>Medico</option>
+                <option>Mecanico</option>
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </p>
+    </form>
+</body>
+</html>
