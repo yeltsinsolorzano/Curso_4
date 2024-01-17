@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de edad</title>
+</head>
+<body>
+    <!-- <h1>Primera parte</h1>
+    <form action="formulario.php" method="get">
+        <p>
+            <label for="iano">En que ano naciste?</label>
+            <input type="number" name="ano_nacimiento" id="iano" min="1900" max="2024" value="2000" oninput="iedad.innerHTML = Number(ifechaactual.value) - Number(iano.value)">
+         </p>
+        <p>
+            <label for="ifecha-actual">Ano actual</label>
+            <input type="number" name="ano-actual" id="ifechaactual" required oninput="iedad.innerHTML = Number(ifechaactual.value) - Number(iano.value)">
+        </p>
+        <p>
+            <label for="iedad">Tu edad es:</label>
+            <output id="iedad">-</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </p>
+    </form> -->
+
+    <!-- En esta segunda forma de hacer el ejercicio estamos profundizando un poco mas en Javascript, declarando la ejecucion de una funcion llamada "calcidad()"
+    
+    Para ello debemos crear un script en el cual declaremos la funcion-->
+
+    
+    <h1>Segunda parte</h1>
+    <form action="">
+        <p>
+            <label for="iedad">En que ano naciste?</label>
+            <input type="number" name="edad" id="iedad" min="1900" max="2024" value="2000" oninput="calcidad()">
+        </p>
+        <p>
+            <label for="resultado">Tu edad es:</label>
+            <output id="resultado"></output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </p>
+    </form>
+
+    <script>
+        function calcidad () {
+            let actual = new Date().getFullYear()
+            resultado.innerHTML = Number(actual) - Number(iedad.value)
+        }
+    </script>
+</body>
+</html>

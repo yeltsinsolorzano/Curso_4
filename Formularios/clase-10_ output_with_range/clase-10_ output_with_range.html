@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Input: range with Output</title>
+</head>
+<body>
+    <form action="formulario.php" method="get">
+        <p>
+           <label for="iopinion">Nivel de satisfaccion</label>
+           <input type="range" name="Puntuacion" id="iopinion" min="1" max="10" value="6" oninput="puntuacion.innerHTML = Number(iopinion.value)">
+           <output id="puntuacion">6</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </p>
+    </form>
+</body>
+</html>
