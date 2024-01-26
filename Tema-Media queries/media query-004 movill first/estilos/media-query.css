@@ -1,6 +1,84 @@
 /* TODAS LAS DEMAS MEDIA QUERIES */
 
-@media print {
 
+/* IMPRESION */
+@media print {
+    *  {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+    }
 }
 
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main {
+        max-width: 650px;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        max-width: 700px;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#desktop {
+        display: block;
+    }
+}
+
+/* PANTALLAS GRANDES */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 60%;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
+}
