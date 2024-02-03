@@ -7,15 +7,6 @@
 /* ESTILO PARA TABLET */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-
-    main {
-        width: 70%;
-    }
-
-    section#contenedor_img {
-        float: left;
-        height: 100%;
-    }
     
 }
 
