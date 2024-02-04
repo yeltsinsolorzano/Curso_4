@@ -22,10 +22,16 @@
                 <h1>Login</h1>
                 <p>Sea bienvenido nuevamente. Haga login para accesar a su cuenta y poder hacer las configuraciones en su perfil</p>
                 <form action="login.php" method="post" autocomplete="on">
-                    <label for="usuario"><i class="material-symbols-outlined">Person</i></label>
-                    <input type="email" name="login"  id="usuario" placeholder="Introduzca su E-mail" autocomplete="email" required maxlength="30">
-                    <label for="contrasena"><i class="material-symbols-outlined">vpn_key</i></label></label>
-                    <input type="password" name="" id="contrasena" placeholder="Introduzca su contrasena" autocomplete="current-password" required minlength="8" maxlength="20">
+                    <div class="contenedor_form__cajas">
+                        <i class="material-symbols-outlined">Person</i>
+                        <input type="email" name="login"  id="usuario" placeholder="Introduzca su E-mail" autocomplete="email" required maxlength="30">
+                        <label for="usuario">usuario</label>
+                    </div>
+                    <div class="contenedor_form__cajas">
+                        <i class="material-symbols-outlined">vpn_key</i>
+                        <input type="password" name="" id="contrasena" class="contenedor_form__cajas--password" placeholder="Introduzca su contrasena" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="contrasena">Contrasena</label>
+                    </div>
                     <input type="submit" value="Entrar" class="boton">
                     <a href="#" target="_blank" rel="noopener noreferrer">
                         Olvide la contrasena <i class="material-symbols-outlined">mail</i>

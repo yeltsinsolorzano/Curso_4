@@ -13,7 +13,7 @@
     }
 
     section#login {
-        height: 350px;
+        height: 500px;
         width: 720px;
     }
 
@@ -36,7 +36,6 @@
     input {
         width: 93%;
         height: 40px;
-        margin: 3px 0px;
         border-radius: 5px;
     }
 
@@ -80,13 +79,12 @@
 
     input {
         width: 93.8%;
-        height: 60px;
-        margin: 3px 0px;
+        height: 40px;
         border-radius: 5px;
     }
 
     a {
-        height: 60px;
+        height: 40px;
     }
 
 }
