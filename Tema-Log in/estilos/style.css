@@ -38,8 +38,8 @@ section#login {
     position: absolute;
     left: 50%;
     top: 50%;
+    
     transform: translate(-50%, -50%);
-
     transition: width .3s, height .3s;
 }
 
@@ -77,13 +77,13 @@ div#contenedor_form p {
     background-color: #5f2c82;
     margin: 3px 0px;
     border-radius: 7px;
-    color: white;
 }
 
-.contenedor_form__caja i {
+.contenedor_form__cajas i {
     color: white;
+    padding-left: 5px;
+    transform: translate(0%, 24%);
 }
-
 
 .contenedor_form__cajas label {
     display: none;
@@ -91,14 +91,15 @@ div#contenedor_form p {
 
 input {
     display: inline-block;
-    width: 87%;
-    height: 40px;
+    width: 85.4%;
+    height: 41px;
     border-radius: 7px;
     padding: 6px;
+    background-color: #8fe6e3;
 }
 
-.contenedor_form__cajas--password {
-    background-color: #8fe6e3;
+.contenedor_form__cajas input:hover {
+    background-color: white;
 }
 
 input.boton {
@@ -129,9 +130,16 @@ a {
     font-size: 1em;
 }
 
+
+
 a:hover {
     background-color: #204645;
     color: white;
+}
+
+a i {
+    padding-left: 5px;
+    transform: translate(0%, 24%);
 }
 
 

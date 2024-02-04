@@ -13,7 +13,7 @@
     }
 
     section#login {
-        height: 500px;
+        height: 350px;
         width: 720px;
     }
 
@@ -34,7 +34,7 @@
     }
 
     input {
-        width: 93%;
+        width: 91.9%;
         height: 40px;
         border-radius: 5px;
     }
@@ -56,7 +56,7 @@
 
     section#login {
         width: 80%;
-        height: 450px;
+        height: 380px;
         max-width: 800px;
     }
 
@@ -78,7 +78,7 @@
     }
 
     input {
-        width: 93.8%;
+        width: 92.7%;
         height: 40px;
         border-radius: 5px;
     }
